@@ -98,8 +98,8 @@ CSS Document */
    Content color style
    ========================================================================== */
 body {
-  background-color: #fff;
-  font-family: "Opensans";
+  background-color: rgba(0, 255, 255, .50);
+  font-family: 'Poiret One';
   font-size: 14px;
 }
 .boxed {
@@ -113,9 +113,9 @@ h4,
 h5,
 h6,
 h7 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  color: #222222;
+  font-family: 'Poiret One';
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
   line-height: 1.2;
 }
 .response {
@@ -137,7 +137,7 @@ a:focus {
 }
 p {
   color: rgba(34, 34, 34, 0.5);
-  font-family: 'Opensans', sans-serif;
+  font-family: 'Poiret One';
   font-size: 14px;
   line-height: 26px;
 }
@@ -173,7 +173,7 @@ blockquote p,
 }
 .highlight {
   background-color: #222222;
-  color: #c29a34;
+  color: rgba(0, 0, 0, 0.7);
   padding: 3px 2px;
 }
 .dis-n {
@@ -205,7 +205,7 @@ blockquote p,
   display: inline-block;
   text-transform: uppercase;
   color: rgba(34, 34, 34, 0.5);
-  font-family: 'Opensans', sans-serif;
+  font-family: 'Poiret One';
   border: 1px solid rgba(34, 34, 34, 0.3);
   padding: 11px 15px;
   background: none;
@@ -303,7 +303,7 @@ Revolution slider
   bottom: 5px;
   z-index: 150;
   font-size: 40px;
-  color: #ccc;
+  color: #0fb8ad;
   cursor: pointer;
   display: none;
   -webkit-transition: all 0.3s ease;
@@ -313,7 +313,7 @@ Revolution slider
   transition: all 0.3s ease;
 }
 #totop:hover {
-  color: #222222;
+  color: #0f3e68;
 }
 /* ==========================================================================
    Home video styles
@@ -353,7 +353,7 @@ Revolution slider
   color: #222222;
   text-align: center;
   text-transform: initial;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One';
 }
 .full-screen-block .fade-ticker .big-text h1 span {
   font-weight: 600;
@@ -398,7 +398,7 @@ video#cover-video {
   padding: 0 8px 0;
   margin: 0 20px;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One';
 }
 .coming-time-block .coming-time .cd-time {
   display: block;
@@ -406,7 +406,7 @@ video#cover-video {
   font-size: 24px;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.5);
-  font-family: 'Opensans', sans-serif;
+  font-family: 'Poiret One';
   text-transform: uppercase;
   padding-bottom: 10px;
 }
@@ -434,7 +434,7 @@ video#cover-video {
   font-size: 12px;
   line-height: 40px;
   color: rgba(34, 34, 34, 0.5);
-  font-family: 'Opensans', sans-serif;
+  font-family: 'Poiret One';
   position: relative;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -450,7 +450,7 @@ video#cover-video {
 }
 .dropdown-submenu:after {
   content: "\f3d3";
-  font-family: Ionicons;
+  font-family: 'Poiret One';
   font-style: normal;
   font-weight: normal;
   text-decoration: inherit;
@@ -499,7 +499,7 @@ video#cover-video {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 #header.header-top-fixed .header-body {
-  background: rgba(34, 34, 34, 0.9);
+  background: rgba(0, 153, 153, 0.7);
   width: 100%;
   /*    .navbar-default .navbar-nav > li > a{ 
                 color: #333;
@@ -556,7 +556,7 @@ video#cover-video {
 #header .navbar-default .navbar-nav > li > a {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.9);
-  font-family: 'Opensans', sans-serif;
+  font-family: 'Poiret One';
   font-size: 11px;
   padding: 15px 0 5px;
   letter-spacing: 2px;
@@ -653,7 +653,7 @@ section {
 }
 .section-title {
   position: relative;
-  background-color: rgba(34, 34, 34, 0.9);
+  background: rgba(0, 153, 153, 0.5);;
 }
 .section-title:after {
   content: '';
@@ -663,7 +663,7 @@ section {
   width: 0;
   height: 0;
   margin-left: -40px;
-  border-top: 40px solid rgba(34, 34, 34, 0.9);
+  border-top: 40px solid rgba(0, 153, 153, 0.5);
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   -webkit-box-sizing: border-box;
@@ -684,7 +684,7 @@ section {
   font-size: 70px;
   line-height: 70px;
   text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One';
   text-align: center;
   letter-spacing: 5px;
 }
@@ -695,7 +695,7 @@ section {
   margin: 0 0 20px;
   letter-spacing: 1px;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One';
   text-transform: uppercase;
 }
 .section-title .section-title-body.dark .head-title {
@@ -709,7 +709,7 @@ section {
   position: relative;
   padding: 0 0 40px 0;
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One';
 }
 .section-sub-title .section-title-body.white {
   margin: 0;
@@ -854,7 +854,7 @@ section {
   transition: all 0.3s ease;
 }
 .fact-block .fact .factor {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One';
   font-size: 40px;
   color: #222222;
   margin: 10px 0 15px;
@@ -866,7 +866,7 @@ section {
   color: rgba(34, 34, 34, 0.7);
   font-size: 15px;
   margin: 15px 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One';
 }
 .fact-block .fact i {
   font-size: 50px;
@@ -913,7 +913,7 @@ section {
   font-size: 15px;
   letter-spacing: 1px;
   font-weight: 600;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One';
   text-transform: uppercase;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
@@ -927,7 +927,7 @@ section {
 }
 .block-feature-icon .block-title p {
   color: rgba(34, 34, 34, 0.5);
-  font-family: 'Opensans', sans-serif;
+  font-family: 'Poiret One';
   text-align: right;
   line-height: 26px;
 }
@@ -1039,8 +1039,10 @@ section {
   margin-bottom: 30px;
 }
 .company-feature p {
-  color: #777;
-  font-family: 'Opensans', sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: 'Poiret One';
+  font-size: 1.15em;
+  font-weight: 700;
   line-height: 26px;
 }
 .company-feature p a {
@@ -1048,7 +1050,7 @@ section {
 }
 .company-feature ul li {
   line-height: 26px;
-  font-family: 'Opensans', sans-serif;
+  font-family: 'Poiret One';
   color: #777;
 }
 .company-feature ul li i {
@@ -1119,7 +1121,7 @@ section {
 .nav-tabs li a {
   border: none !important;
   background: none;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One';
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
@@ -1201,7 +1203,7 @@ section {
   color: rgba(34, 34, 34, 0.7);
   display: inline-block;
   text-decoration: none;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One';
   letter-spacing: 1px;
   font-weight: 600;
   border-bottom: 2px solid transparent;
@@ -1274,7 +1276,7 @@ section {
 .portfolio-cell .portfolio-item .image-overlay .image-overlay-content h4 {
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One';
   color: #ffffff;
   letter-spacing: 1px;
   font-weight: 600;
@@ -1318,14 +1320,14 @@ section {
 }
 .block-catalog .list-catalog a {
   text-decoration: none;
-  font-family: 'Opensans', sans-serif;
+  font-family: 'Poiret One';
   color: #222222;
 }
 .block-catalog .list-catalog a:hover {
   color: #222222;
 }
 .block-catalog .catalog-title {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One';
   text-transform: uppercase;
   color: #333;
   margin-bottom: 20px;
@@ -1434,7 +1436,7 @@ section {
   font-size: 15px;
   line-height: 40px;
   height: 40px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One';
   letter-spacing: 1px;
   font-weight: 600;
 }
@@ -1500,7 +1502,7 @@ section {
 .post-blog .blog-info .blog-title {
   font-size: 15px;
   font-weight: 600;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One';
   color: #ffffff;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -1613,7 +1615,7 @@ section {
 .block-form label {
   margin: 10px 0 0;
   color: rgba(34, 34, 34, 0.5);
-  font-family: 'Opensans', sans-serif;
+  font-family: 'Poiret One';
   font-weight: 400;
 }
 .block-form .form-control {
@@ -1633,7 +1635,7 @@ section {
 }
 .info-categories-list a {
   text-decoration: none;
-  font-family: 'Opensans', sans-serif;
+  font-family: 'Poiret One';
   color: #222222;
 }
 .info-categories-list a:hover {
@@ -1666,7 +1668,7 @@ textarea:focus {
 }
 ::-webkit-input-placeholder {
   color: #aaa;
-  font-family: 'Opensans', sans-serif;
+  font-family: 'Poiret One';
 }
 #MyContactForm p label,
 #MyNewsletter p label {
@@ -1681,22 +1683,22 @@ textarea:focus {
   /* Firefox 18- */
 
   color: #aaa;
-  font-family: 'Opensans', sans-serif;
+  font-family: 'Poiret One';
 }
 ::-moz-placeholder {
   /* Firefox 19+ */
 
   color: #aaa;
-  font-family: 'Opensans', sans-serif;
+  font-family: 'Poiret One';
 }
 :-ms-input-placeholder {
   color: #aaa;
-  font-family: 'Opensans', sans-serif;
+  font-family: 'Poiret One';
 }
 #form-wrapper #MyContactForm .error {
   bottom: 18px;
   color: #FF0000;
-  font-family: inherit;
+  font-family: 'Poiret One';
   font-size: 12px;
   font-weight: normal;
   left: auto;
@@ -1709,7 +1711,7 @@ textarea:focus {
 #newsletter-form-wrapper #MyNewsletter .newslettererror {
   bottom: 18px;
   color: #FF0000;
-  font-family: inherit;
+  font-family: 'Poiret One';
   font-size: 12px;
   font-weight: normal;
   left: auto;
@@ -1776,7 +1778,7 @@ textarea:focus {
 .response {
   letter-spacing: 1px;
   margin: -10px 0 25px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One';
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -1865,7 +1867,7 @@ textarea:focus {
 .panel-group .panel-body {
   border: 1px solid #222222;
   font-size: 15px;
-  font-family: 'Opensans', sans-serif;
+  font-family: 'Poiret One';
   background-color: #222222;
 }
 .panel-group .panel-title {
@@ -1884,7 +1886,7 @@ textarea:focus {
 }
 .panel-group .panel-title a.collapsed:before {
   content: "\e079";
-  font-family: Simple-Line-Icons;
+  font-family: 'Poiret One';
   font-style: normal;
   font-weight: normal;
   text-decoration: inherit;
@@ -1917,7 +1919,7 @@ textarea:focus {
 }
 .panel-group .panel-title a:before {
   content: "\e07b";
-  font-family: Simple-Line-Icons;
+  font-family: 'Poiret One';
   font-style: normal;
   font-weight: normal;
   text-decoration: inherit;
@@ -1977,14 +1979,14 @@ textarea:focus {
   margin: 0 0 20px 0;
   color: rgba(34, 34, 34, 0.7);
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One';
   letter-spacing: 1px;
   font-weight: 600;
   text-transform: uppercase;
 }
 .widget-title i {
   margin-right: 15px;
-  color: #c29a34;
+  color: #2e6da4;
   font-size: 18px;
 }
 .widget-block {
@@ -2075,7 +2077,7 @@ textarea:focus {
   color: rgba(255, 255, 255, 0.9);
   margin: 0 0 10px 0;
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One';
   letter-spacing: 1px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2089,7 +2091,7 @@ textarea:focus {
   color: #ffffff;
   margin: 0;
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One';
   letter-spacing: 1px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2343,7 +2345,7 @@ span.dropcap {
   background-attachment: fixed;
 }
 #about .section-block-title {
-  background-image: url("../img/bg/bg6.jpg");
+  background-image: url("../img/bg/tealombrebg.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -2382,12 +2384,12 @@ span.dropcap {
 #reserve.paralax .section-block-title {
   background-attachment: fixed;
 }
-#services .section-block-title {
-  background-image: url("../img/bg/bg5.jpg");
+#skills .section-block-title {
+  background-image: url("../img/bg/tealombrebg.jpg");
   background-size: cover;
   background-position: center center;
 }
-#services.paralax .section-block-title {
+#skills.paralax .section-block-title {
   background-attachment: fixed;
 }
 #agancy .section-block-title {
@@ -2407,7 +2409,7 @@ span.dropcap {
   background-attachment: fixed;
 }
 #portfolio .section-block-title {
-  background-image: url("../img/bg/bg3.jpg");
+  background-image: url("../img/bg/tealombrebg.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -2439,7 +2441,7 @@ span.dropcap {
   background-attachment: fixed;
 }
 #contact .section-block-title {
-  background-image: url("../img/bg/bg1.jpg");
+  background-image: url("../img/bg/tealombrebg.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -2527,7 +2529,7 @@ span.dropcap {
 #footer .footer-info-block h4 {
   color: rgba(255, 255, 255, 0.7);
   margin: 10px 0 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One';
   text-transform: uppercase;
   font-size: 15px;
   letter-spacing: 1px;
@@ -2547,4 +2549,142 @@ span.dropcap {
 #footer .footer-bottom {
   padding: 20px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* entire container, keeps perspective */
+.cardContainer {
+  perspective: 1000px;
+  display: inline-block;
+}
+
+/* flip the pane when hovered */
+.cardContainer:hover .card, .cardContainer.hover .card {
+  transform: rotateY(180deg);
+}
+
+.cardContainer, .front, .back {
+  width: 150px;
+  height: 100px;
+}
+
+/* flip speed goes here */
+.card {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+}
+
+.front img {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.back p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.front .smaller {
+  height: 80%;
+}
+#home {
+  height: 17vh;
+}
+#skills h2 {
+  color: rgba(0, 0, 0, 0.85);
+}
+#skills p {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+#portfolio iframe {
+  width: 90%;
+  height: 85vh;
+  position: relative;
+  left: 5%;
+  bottom: 20px;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+.applicationWindow {
+  position: relative;
+  top: 100px;
+}
+.projectChooser {
+  position: relative;
+  left: 3%;
+  margin-bottom: 50px;
+}
+.projectChooser li {
+  display: inline-block;
+  list-style-type: none;
+  border: 1px solid rgba(0, 155, 255, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  padding: 3px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #0fb8ad;
+}
+.projectChooser li.chosen {
+  background-color: #00E3BB;
+  color: rgba(0, 0, 0, 0.8);
+}
+.appInfo {
+  position: relative;
+  text-align: left;
+  left: 5%;
+  margin-bottom: 50px;
+}
+#portfolio p {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.25em;
+  font-weight: 700;
+}
+.appInfo h1, .appInfo h3 {
+  color: rgba(0, 155, 255, 1);
+}
+
+.onlinePresence {
+  text-align: right;
+}
+.onlinePresence h2 {
+  color:rgba(0, 0, 0, 0.8);
+}
+.onlinePresence li {
+  list-style-type: none;
+  font-size: 1.5em;
+  margin: 25px 0;
+}
+.onlinePresence li a {
+  color: rgba(0, 155, 255, 1);
 }
