@@ -1067,10 +1067,10 @@ section {
   z-index: 1;
 }
 #owl-company-about .owl-dot.active {
-  border-color: #c29a34;
+  border-color: #2e6da4;
 }
 #owl-company-about .owl-dot span {
-  background: none repeat scroll 0 0 #c29a34;
+  background: none repeat scroll 0 0 #2e6da4;
   display: inline-block;
   height: 5px;
   text-align: center;
