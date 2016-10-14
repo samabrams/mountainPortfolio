@@ -1,7 +1,16 @@
 // JavaScript Document
+var username = "samabrams625";
+var domain = "gmail.com";
 
 jQuery(document).ready(function ($) {
     "use strict";
+    var email = username + '@' + domain;
+    var link = $("<a>", {
+        href: email,
+        text: email
+    });
+    $("#emailContainer").html(link);
+
 
     /* ==============================================
      Preloader
@@ -40,7 +49,7 @@ jQuery(document).ready(function ($) {
     $(".navbar-collapse  ul li a").on("click", function () {
         mobileNav.removeClass("in");
     });
-    
+
     /* ==============================================
      menu hover open
      =============================================== */
@@ -247,7 +256,7 @@ $('.fade-ticker:has(>div:eq(1))').list_ticker({
 // Daily Deal CountDown Clock Settings
 var date = new Date().getTime();			// This example is just to show how this function works.
 //var new_date = new Date(date + 86400000);	// You can set your own time whenever you want.
- var new_date = new Date('2016-11-25').getTime();
+var new_date = new Date('2016-11-25').getTime();
 //    var n = new_date.toUTCString();				// 'date' value is given in milliseconds.
 //alert(new_date);
 $(".coming-time").countdown({
@@ -260,62 +269,62 @@ $(".coming-time").countdown({
  Revolution slider
  =============================================== */
 jQuery('.tp-banner').show().revolution(
-        {
-            dottedOverlay: "none",
-            delay: 16000,
-            startwidth: 1300,
-            startheight: 750,
-            hideThumbs: 200,
-            thumbWidth: 100,
-            thumbHeight: 50,
-            thumbAmount: 5,
-            navigationType: "none",
-            navigationArrows: "solo",
-            navigationStyle: "preview1",
-            touchenabled: "on",
-            onHoverStop: "off",
-            swipe_velocity: 0.7,
-            swipe_min_touches: 1,
-            swipe_max_touches: 1,
-            drag_block_vertical: false,
-            parallax: "mouse",
-            parallaxBgFreeze: "on",
-            parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
-            keyboardNavigation: "off",
-            navigationHAlign: "center",
-            navigationVAlign: "bottom",
-            navigationHOffset: 0,
-            navigationVOffset: 20,
-            soloArrowLeftHalign: "left",
-            soloArrowLeftValign: "center",
-            soloArrowLeftHOffset: 20,
-            soloArrowLeftVOffset: 0,
-            soloArrowRightHalign: "right",
-            soloArrowRightValign: "center",
-            soloArrowRightHOffset: 20,
-            soloArrowRightVOffset: 0,
-            shadow: 0,
-            fullWidth: "off",
-            fullScreen: "on",
-            spinner: "spinner1",
-            stopLoop: "off",
-            stopAfterLoops: -1,
-            stopAtSlide: -1,
-            shuffle: "off",
-            autoHeight: "off",
-            forceFullWidth: "on",
-            hideThumbsOnMobile: "off",
-            hideNavDelayOnMobile: 1500,
-            hideBulletsOnMobile: "off",
-            hideArrowsOnMobile: "off",
-            hideTimerBar: "on",
-            hideThumbsUnderResolution: 0,
-            hideSliderAtLimit: 0,
-            hideCaptionAtLimit: 0,
-            hideAllCaptionAtLilmit: 0,
-            startWithSlide: 0,
-            fullScreenOffsetContainer: ""
-        });
+    {
+        dottedOverlay: "none",
+        delay: 16000,
+        startwidth: 1300,
+        startheight: 750,
+        hideThumbs: 200,
+        thumbWidth: 100,
+        thumbHeight: 50,
+        thumbAmount: 5,
+        navigationType: "none",
+        navigationArrows: "solo",
+        navigationStyle: "preview1",
+        touchenabled: "on",
+        onHoverStop: "off",
+        swipe_velocity: 0.7,
+        swipe_min_touches: 1,
+        swipe_max_touches: 1,
+        drag_block_vertical: false,
+        parallax: "mouse",
+        parallaxBgFreeze: "on",
+        parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
+        keyboardNavigation: "off",
+        navigationHAlign: "center",
+        navigationVAlign: "bottom",
+        navigationHOffset: 0,
+        navigationVOffset: 20,
+        soloArrowLeftHalign: "left",
+        soloArrowLeftValign: "center",
+        soloArrowLeftHOffset: 20,
+        soloArrowLeftVOffset: 0,
+        soloArrowRightHalign: "right",
+        soloArrowRightValign: "center",
+        soloArrowRightHOffset: 20,
+        soloArrowRightVOffset: 0,
+        shadow: 0,
+        fullWidth: "off",
+        fullScreen: "on",
+        spinner: "spinner1",
+        stopLoop: "off",
+        stopAfterLoops: -1,
+        stopAtSlide: -1,
+        shuffle: "off",
+        autoHeight: "off",
+        forceFullWidth: "on",
+        hideThumbsOnMobile: "off",
+        hideNavDelayOnMobile: 1500,
+        hideBulletsOnMobile: "off",
+        hideArrowsOnMobile: "off",
+        hideTimerBar: "on",
+        hideThumbsUnderResolution: 0,
+        hideSliderAtLimit: 0,
+        hideCaptionAtLimit: 0,
+        hideAllCaptionAtLilmit: 0,
+        startWithSlide: 0,
+        fullScreenOffsetContainer: ""
+    });
 
 /* ==============================================
  Magnific Popup Initialization
@@ -392,7 +401,8 @@ $(".portfolio-filter-title .filter a").on("click", function () {
  =============================================== */
 $("#start").on("click", function () {
     $('html, body').animate({
-        scrollTop: parseInt($("#about").offset().top)}, '800');
+        scrollTop: parseInt($("#about").offset().top)
+    }, '800');
     return false;
 
 });
@@ -439,13 +449,13 @@ $(function () {
 
         // how many times to update the value, and how much to increment the value on each update
         var loops = Math.ceil(options.speed / options.refreshInterval),
-                increment = (options.to - options.from) / loops;
+            increment = (options.to - options.from) / loops;
 
         return $(this).each(function () {
             var _this = this,
-                    loopCount = 0,
-                    value = options.from,
-                    interval = setInterval(updateTimer, options.refreshInterval);
+                loopCount = 0,
+                value = options.from,
+                interval = setInterval(updateTimer, options.refreshInterval);
 
             function updateTimer() {
                 value += increment;

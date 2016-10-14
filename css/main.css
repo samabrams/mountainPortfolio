@@ -577,7 +577,7 @@ video#cover-video {
   transition: all 0.3s ease;
 }
 #header .navbar-default .navbar-nav > li > a:hover {
-  color: #ffffff;
+  color: #2e6da4;
 }
 #header .navbar-default .navbar-nav > li > a:hover:after {
   width: 100%;
@@ -1070,7 +1070,7 @@ section {
   border-color: #2e6da4;
 }
 #owl-company-about .owl-dot span {
-  background: none repeat scroll 0 0 #2e6da4;
+  background: none repeat scroll 0 0 #FFFFFF;
   display: inline-block;
   height: 5px;
   text-align: center;
@@ -2654,6 +2654,7 @@ span.dropcap {
   padding: 3px;
   color: rgba(255, 255, 255, 0.8);
   background-color: #0fb8ad;
+  cursor: pointer;
 }
 .projectChooser li.chosen {
   background-color: #00E3BB;
@@ -2687,4 +2688,7 @@ span.dropcap {
 }
 .onlinePresence li a {
   color: rgba(0, 155, 255, 1);
+}
+.owl-carousel .item img{
+  border-radius: 5px;
 }
