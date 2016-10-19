@@ -2692,3 +2692,6 @@ span.dropcap {
 .owl-carousel .item img{
   border-radius: 5px;
 }
+.appInfo a {
+  color: #1d78cb;
+}

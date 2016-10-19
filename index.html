@@ -219,10 +219,9 @@
     <div class="block2">
         <div class="container">
             <h2>My Skills</h2>
-            <p>In my time as a developer, I've worked with a wide range of technologies, including front end languages,
-                back end
-                languages, frameworks, and libraries.</p>
-            <p>These are my favorites:</p>
+            <p>In my time as a developer, I've worked with a wide range of technologies, on both the front end and the back end,
+               </p>
+            <p>These are my favorite technologies:</p>
             <div class="row">
                 <div class="col-md-2 col-sm-3">
                     <div class="block-feature-icon center">
@@ -373,9 +372,9 @@
     <div class="portfolio-filter-block">
         <div class="appInfo col-xs-12">
             <h1 id="appName">Kanye Guess</h1>
-            <p id="appDescription">A game for guessing songs by Kanye West. Users can click for clues or guess songs
-                to
-                get feedback.</p>
+            <a id="liveLink" href="https://samabramsdev.com/guessYeezy">Live</a>
+            <a id="gitLink" href="https://github.com/samabrams/guessYeezy.git">GitHub</a>
+            <p id="appDescription">A game for guessing songs by Kanye West. Users can click for clues or guess songs to get feedback. <br>Designed in accordance with West's 2016 album <em>The Life of Pablo</em>, as well as <a href='http://kanyewest.com'>his website</a></p>
             <h3>Technologies:</h3>
             <p id="appTechnologies">AngularJS, JavaScript, JavaScript Regex, Bootstrap for CSS, jQuery, HTML, CSS,
                 Git</p>
@@ -383,24 +382,36 @@
             <p id="appDevelopmentRole">Sole developer</p>
 
         </div>
-        <ul class="projectChooser">
+        <ul class="projectChooser" style="clear: both">
             <li myRole="Sole developer"
                 technologies="AngularJS, JavaScript, JavaScript Regex, Bootstrap for CSS, jQuery, HTML, CSS, Git"
-                description="A game for guessing songs by Kanye West. Users can click for clues or guess songs to get feedback."
-                src="https://samabrams.github.io/guessYeezy/" class="chosen">Kanye Guess
+                description="A game for guessing songs by Kanye West. Users can click for clues or guess songs to get feedback. <br>Designed in accordance with West's 2016 album <em>The Life of Pablo</em>, as well as <a href='kanyewest.com'>his website</a>"
+                git="https://github.com/samabrams/guessYeezy.git"
+                src="http://samabramsdev.com/guessYeezy" class="chosen">Kanye Guess
             </li>
-            <li myRole="Sole developer" technologies="JavaScript, Bootstrap for CSS, jQuery, HTML, CSS, Git"
+            <li myRole="Sole developer"
+                technologies="JavaScript, Bootstrap for CSS, jQuery, HTML, CSS, Git"
                 description="A matching game inspired by the HBO series Game of Thrones. Cards have special abilities based on the qualities of the show's characters"
-                src="https://samabrams.github.io/memory_match/">Westeros Match
+                git="https://github.com/samabrams/memory_match.git"
+                src="http://samabramsdev.com/memory_match">Westeros Match
             </li>
             <li myRole="JavaScript developer and Git manager in a team of 3"
                 technologies="JavaScript, Bootstrap for CSS, jQuery, HTML, CSS, Git"
                 description="A tic tac toe game that responds to user input to create a personalized and dynamic board"
-                src="https://samabrams.github.io/c9_tictactoe/">Tic Tac Toe
+                git="https://github.com/samabrams/c9_tictactoe.git"
+                src="http://samabramsdev.com/tictactoe">Tic Tac Toe
             </li>
-            <li myRole="Sole developer" technologies="JavaScript, Bootstrap for CSS, jQuery, HTML, CSS, Git"
+            <li myRole="AngularJS, HTML, CSS, and PHP developer in a team of 7"
+                technologies="JavaScript, AngularJS, PHP, MySQL, jQuery, HTML, CSS, Git"
+                description="An app that allows truckers to calculate the daily and weekly traffic time between two locations on Interstate5 at a glance"
+                git="https://github.com/Learing-Fuze/C9_traffic_helper.git"
+                src="http://samabramsdev.com/truckRoute"> Truck Route
+            </li>
+            <li myRole="Sole developer"
+                technologies="JavaScript, Bootstrap for CSS, jQuery, HTML, CSS, Git"
                 description="A four-function calculator implementing standard computational logic"
-                src="https://samabrams.github.io/calculator/">Calculator
+                git="https://github.com/samabrams/calculator.git"
+                src="http://samabramsdev.com/calculator/">Calculator
             </li>
             <!--<li myRole="AngularJS, HTML, CSS, and PHP developer in a team of 7" technologies="AngularJS, JavaScript, jQuery, HTML, CSS, PHP, MySQL" description="An app that displays traffic between two points on Interstate 5 in weekly and daily view" src="https://samabrams.github.io/C9_traffic_helper/">Truck Route</li>-->
         </ul>
@@ -412,8 +423,10 @@
                 $('.chosen').removeClass('chosen');
                 $(this).addClass('chosen');
                 $('#projectFrame').attr('src', $(this).attr('src'));
+                $('#liveLink').attr('href', $(this).attr('src'));
+                $('#gitLink').attr('href', $(this).attr('git'));
                 $('#appName').text($(this).text());
-                $('#appDescription').text($(this).attr('description'));
+                $('#appDescription').html($(this).attr('description'));
                 $('#appTechnologies').text($(this).attr('technologies'));
                 $('#appDevelopmentRole').text($(this).attr('myRole'));
             })
