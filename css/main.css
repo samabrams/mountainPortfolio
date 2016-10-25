@@ -2696,3 +2696,11 @@ span.dropcap {
   color: #1d78cb;
   font-size: 1.5em;
 }
+#portfolio p.vidLink {
+  color: #1d78cb;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.usageVid {
+  display: none;
+}

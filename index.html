@@ -371,23 +371,25 @@
     </div><!--/section-block-title-->
     <div class="portfolio-filter-block">
         <div class="appInfo col-xs-12">
-            <h1 id="appName">Kanye Guess</h1>
-            <a id="liveLink" href="http://samabramsdev.com/guessYeezy">Live</a> |
-            <a id="gitLink" href="https://github.com/samabrams/guessYeezy.git">GitHub</a>
-            <p id="appDescription">A game for guessing songs by Kanye West. Users can click for clues or guess songs to get feedback. <br>Designed in accordance with West's 2016 album <em>The Life of Pablo</em>, as well as <a href='http://kanyewest.com'>his website</a></p>
+            <h1 class="appName">Kanye Guess</h1>
+            <a class="liveLink" target="_blank" href="http://samabramsdev.com/guessYeezy">Live</a> |
+            <a class="gitLink" target="_blank" href="https://github.com/samabrams/guessYeezy.git">GitHub</a>
+            <p class="appDescription">A game for guessing songs by Kanye West. Users can click for clues or guess songs to get feedback. <br>Designed in accordance with West's 2016 album <em>The Life of Pablo</em>, as well as <a target="_blank" href='http://kanyewest.com'>his website</a></p>
             <h3>Technologies:</h3>
-            <p id="appTechnologies">AngularJS, JavaScript, JavaScript Regex, Bootstrap for CSS, jQuery, HTML, CSS,
+            <p class="appTechnologies">AngularJS, JavaScript, JavaScript Regex, Bootstrap for CSS, jQuery, HTML, CSS,
                 Git</p>
             <h3>Role:</h3>
-            <p id="appDevelopmentRole">Sole developer</p>
+            <p class="appDevelopmentRole">Sole developer</p>
+            <p class="vidLink">See it in action</p>
+            <video class="usageVid" controls width="1080" src="img/kanyeGuessVideo.mov"></video>
 
         </div>
         <ul class="projectChooser" style="clear: both">
             <li myRole="Sole developer"
                 technologies="AngularJS, JavaScript, JavaScript Regex, Bootstrap for CSS, jQuery, HTML, CSS, Git"
-                description="A game for guessing songs by Kanye West. Users can click for clues or guess songs to get feedback. <br>Designed in accordance with West's 2016 album <em>The Life of Pablo</em>, as well as <a href='kanyewest.com'>his website</a>"
+                description="A game for guessing songs by Kanye West. Users can click for clues or guess songs to get feedback. <br>Designed in accordance with West's 2016 album <em>The Life of Pablo</em>, as well as <a target='_blank' href='http://kanyewest.com'>his website</a>"
                 git="https://github.com/samabrams/guessYeezy.git"
-                src="http://samabramsdev.com/guessYeezy" class="chosen">Kanye Guess
+                src="http://samabramsdev.com/guessYeezy" vidSrc="img/kanyeGuessVideo.mov" class="chosen">Kanye Guess
             </li>
             <li myRole="Sole developer"
                 technologies="JavaScript, Bootstrap for CSS, jQuery, HTML, CSS, Git"
@@ -419,16 +421,20 @@
         <iframe id="projectFrame" src="https://samabrams.github.io/guessYeezy/"></iframe>
 
         <script>
+            $('.vidLink').click(function(){
+                $('.usageVid').toggle();
+            });
             $('.projectChooser li').click(function () {
                 $('.chosen').removeClass('chosen');
                 $(this).addClass('chosen');
-                $('#projectFrame').attr('src', $(this).attr('src'));
-                $('#liveLink').attr('href', $(this).attr('src'));
-                $('#gitLink').attr('href', $(this).attr('git'));
-                $('#appName').text($(this).text());
-                $('#appDescription').html($(this).attr('description'));
-                $('#appTechnologies').text($(this).attr('technologies'));
-                $('#appDevelopmentRole').text($(this).attr('myRole'));
+                $('.projectFrame').attr('src', $(this).attr('src'));
+                $('.liveLink').attr('href', $(this).attr('src'));
+                $('.gitLink').attr('href', $(this).attr('git'));
+                $('.appName').text($(this).text());
+                $('.appDescription').html($(this).attr('description'));
+                $('.appTechnologies').text($(this).attr('technologies'));
+                $('.appDevelopmentRole').text($(this).attr('myRole'));
+                $('.usageVid').attr('src', $(this).attr('vidSrc'));
             })
         </script>
         <!--<ul class="portfolio-list group list-unstyled">-->
