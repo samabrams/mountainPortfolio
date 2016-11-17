@@ -411,7 +411,7 @@ video#cover-video {
   padding-bottom: 10px;
 }
 /* ==============================================
- drop down menu 
+ drop down menu
  =============================================== */
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -501,12 +501,12 @@ video#cover-video {
 #header.header-top-fixed .header-body {
   background: rgba(0, 153, 153, 0.7);
   width: 100%;
-  /*    .navbar-default .navbar-nav > li > a{ 
+  /*    .navbar-default .navbar-nav > li > a{
                 color: #333;
             }
             .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .current > a, .navbar-default .navbar-nav > .current > a:hover, .navbar-default .navbar-nav > .current > a:focus{
                 color: @color3;
-    
+
             } */
 
 }
@@ -1042,7 +1042,7 @@ section {
   color: rgba(0, 0, 0, 0.7);
   font-family: 'Poiret One';
   font-size: 1.15em;
-  font-weight: 700;
+  font-weight: 300;
   line-height: 26px;
 }
 .company-feature p a {
@@ -1474,7 +1474,7 @@ section {
   line-height: 36px;
   color: #ffffff;
   margin: 0 0 3px;
-  font-weight: 700;
+  font-weight: 300;
 }
 .post-blog .date .month {
   text-transform: uppercase;
@@ -2625,7 +2625,7 @@ span.dropcap {
 #skills p {
   color: rgba(0, 0, 0, 0.8);
   font-size: 1.25em;
-  font-weight: 700;
+  font-weight: 300;
   margin-bottom: 15px;
 }
 #portfolio iframe {
@@ -2670,7 +2670,7 @@ span.dropcap {
 #portfolio p {
   color: rgba(0, 0, 0, 0.8);
   font-size: 1.25em;
-  font-weight: 700;
+  font-weight: 300;
 }
 .appInfo h1, .appInfo h3 {
   color: rgba(0, 155, 255, 1);
@@ -2704,4 +2704,13 @@ span.dropcap {
 }
 .usageVid {
   display: none;
+}
+#skills p.introParagraphs{
+  margin-bottom: 40px;
+}
+.carouselContainer {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
 }
