@@ -2708,10 +2708,12 @@ span.dropcap {
 #skills p.introParagraphs{
   margin-bottom: 40px;
 }
-.carouselContainer {
-  position: absolute;
-  top: 50%;
-  right: 2.5%;
-  transform: translateY(-50%);
-  width: 45%;
+@media only screen and (min-width: 768px) {
+  .carouselContainer {
+    position: absolute;
+    top: 50%;
+    right: 2.5%;
+    transform: translateY(-50%);
+    width: 45%;
+  }
 }
