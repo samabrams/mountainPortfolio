@@ -380,8 +380,8 @@
                 Git</p>
             <h3>Role:</h3>
             <p class="appDevelopmentRole">Sole developer</p>
-            <p class="vidLink">See it in action</p>
-            <video class="usageVid" controls width="1080" src="img/kanyeGuessVideo.mov"></video>
+            <p class="vidLink">See it in action</p> <p class="vidLink" style="display: none">Close video</p>
+            <video class="usageVid" controls width="1080" src="img/kanyeVid.mov"></video>
 
         </div>
         <ul class="projectChooser" style="clear: both">
@@ -389,40 +389,51 @@
                 technologies="AngularJS, JavaScript, JavaScript Regex, Bootstrap for CSS, jQuery, HTML, CSS, Git"
                 description="A game for guessing songs by Kanye West. Users can click for clues or guess songs to get feedback. <br>Designed in accordance with West's 2016 album <em>The Life of Pablo</em>, as well as <a target='_blank' href='http://kanyewest.com'>his website</a>"
                 git="https://github.com/samabrams/guessYeezy.git"
-                src="http://samabramsdev.com/guessYeezy" vidSrc="img/kanyeGuessVideo.mov" class="chosen">Kanye Guess
+                src="http://samabramsdev.com/guessYeezy" vidSrc="img/kanyeVid.mov" class="chosen">Kanye Guess
             </li>
             <li myRole="Sole developer"
                 technologies="JavaScript, Bootstrap for CSS, jQuery, HTML, CSS, Git"
                 description="A matching game inspired by the HBO series Game of Thrones. Cards have special abilities based on the qualities of the show's characters"
                 git="https://github.com/samabrams/memory_match.git"
-                src="http://samabramsdev.com/memory_match">Westeros Match
+                src="http://samabramsdev.com/memory_match"
+                vidSrc="img/westerosMatchVid.mov">Westeros Match
             </li>
             <li myRole="JavaScript developer and Git manager in a team of 3"
                 technologies="JavaScript, Bootstrap for CSS, jQuery, HTML, CSS, Git"
                 description="A tic tac toe game that responds to user input to create a personalized and dynamic board"
                 git="https://github.com/samabrams/c9_tictactoe.git"
-                src="http://samabramsdev.com/tictactoe">Tic Tac Toe
+                src="http://samabramsdev.com/tictactoe"
+                vidSrc="img/tictactoeVid.mov">Tic Tac Toe
             </li>
             <li myRole="AngularJS, HTML, CSS, and PHP developer in a team of 7"
                 technologies="JavaScript, AngularJS, PHP, MySQL, jQuery, HTML, CSS, Git"
                 description="An app that allows truckers to calculate the daily and weekly traffic time between two locations on Interstate5 at a glance"
                 git="https://github.com/Learing-Fuze/C9_traffic_helper.git"
-                src="http://samabramsdev.com/truckRoute"> Truck Route
+                src="http://brianphan88.com/C9_traffic_helper/"
+                vidSrc="img/truckRouteVid.mov"> Truck Route
             </li>
             <li myRole="Sole developer"
                 technologies="JavaScript, Bootstrap for CSS, jQuery, HTML, CSS, Git"
                 description="A four-function calculator implementing standard computational logic"
                 git="https://github.com/samabrams/calculator.git"
-                src="http://samabramsdev.com/calculator/">Calculator
+                src="http://samabramsdev.com/calculator/"
+                vidSrc="img/calcVid.mov">Calculator
             </li>
-            <!--<li myRole="AngularJS, HTML, CSS, and PHP developer in a team of 7" technologies="AngularJS, JavaScript, jQuery, HTML, CSS, PHP, MySQL" description="An app that displays traffic between two points on Interstate 5 in weekly and daily view" src="https://samabrams.github.io/C9_traffic_helper/">Truck Route</li>-->
+            <li myRole="Sole developer"
+                technologies="JavaScript, AngularJS, Math.js, Bootstrap for CSS, jQuery, HTML, CSS, Git"
+                description="A four-function AngularJS calculator utilizing Math.js library to evaluate order of operations"
+                git="https://github.com/samabrams/angularCalculator.git"
+                src="http://samabramsdev.com/angularCalculator/"
+                vidSrc="img/angularCalcVid.mov">Angular Calculator
+            </li>
         </ul>
 
-        <iframe id="projectFrame" src="https://samabrams.github.io/guessYeezy/"></iframe>
+        <iframe class="projectFrame" src="http://samabramsdev.com/guessYeezy/"></iframe>
 
         <script>
             $('.vidLink').click(function(){
                 $('.usageVid').toggle();
+                $('.vidLink').toggle();
             });
             $('.projectChooser li').click(function () {
                 $('.chosen').removeClass('chosen');
